@@ -1,6 +1,6 @@
 my name: Iris Dreizenshtok
 ID:315790410
-my website:https://sise-web-development-environments.github.io/assignment1-irisDreizen/
+my website:https://irisdreizen.github.io/myWebSite/
 
 this website talk about me - a 24 years old student. it have been made for my first assinment in web-development-environments course.
 in this website you will find information about me, my hobbies and favorite music.
