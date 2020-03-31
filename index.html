@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script type="text/javascript">
+  function generateBarCode()
+  {
+   var nric = $('#text').val();
+   var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+   $('#barcode').attr('src', url);
+  }
+ </script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="topnav">
+<a href="#about">About Me</a>
+<a href="#photos">My Photos</a>
+<a href="#playlist">My Playlist</a>
+<a href="#like">Like</a>
+<a href="#qrcoder">QR code</a>
+<a href="#spa">Q&A</a>
+<a href="#contact">Contact Me</a>
+</div>
+
+
+<br/>
+<section id="about" class="section">
+ <h1 align="center"> ABOUT ME </h1>
+ <p align="center" style = "font-family:courier,arial,helvetica;">Hi, my name is Iris and i'm 24 years old. i live in Beer Sheva, but originally from Ashkelon. I am a third year student (who woul'd belive!) in the
+  Information Systems Engeneering department in Ben Gurion University. My hobbies are baking, travel (also the Coronavirus doesn't allow it now), watching series
+  and make pilaties. My expectation from this course are very high and I  would like to learn new languages, and more things i would say in an interview . i very enjoyed this work, especially the design part. HTML and CSS are very intuitive tools. </p>
+</section>
+<hr>
+
+<section id="photos" class="section">
+ <h1 align="center">MY PHOTOS</h1>
+<!-- <img src="img1.jpg" alt="Paris" class="center">-->
+ <div class="row">
+  <div class="column1">
+   <div class="card">
+    <img src="img12.png" style="width:100%"/>
+    <div class="container">
+     <h2>Hiking Pirin Mountains</h2>
+     <p class="title">2020</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="column1">
+   <div class="card">
+    <img src="img22.png" style="width:100%"/>
+    <div class="container">
+     <h2>Great Vacation In Greece</h2>
+     <p class="title">2017</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="column1">
+   <div class="card">
+    <img src="img42.png" style="width:100%"/>
+    <div class="container">
+     <h2>Amazing trip to Albania</h2>
+     <p class="title">2020</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<hr>
+
+<section id="playlist" class="section">
+ <h1 align="center">MY PLAYLIST</h1>
+ <iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/XtHF-RY-s-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<hr>
+<section id="like" class="section">
+ <h1 align="center">Like My Blog Page!</h1>
+<!-- <div class="fb-like" data-href="https://www.facebook.com/backpackersIL/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>-->
+ <iframe style="display: block; margin: auto;" src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/backpackersIL/width=450&layout=standard&action=like&size=small&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</section>
+<hr>
+<section id="qrcoder" class="section">
+ <h1 align="center">SCAN MY CODE</h1>
+<!-- <input id="text" type="text"-->
+<!--        value="NRIC or Work Permit" style="Width:20%"-->
+<!--        onblur='generateBarCode();' />-->
+
+ <img class="center1" src="https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://sise-web-development-environments.github.io/assignment1-irisDreizen/" />
+
+</section>
+<hr>
+<section id="spa" class="section">
+ <h1 align="center">Q&A</h1>
+ <h2 align="center" style = "font-family:courier,arial,helvetica;"> 1. The Three main diffrences between web1,web2 and web3</h2>
+<p align="center">
+ in web 1.0 the content is given by website's managers, in web 2.0 sharing and communication is available, in web 3.0 the information can be read by human and computer (using AI)
+ <br/>
+ <br/>
+ web 1.0 using links and directories in search engine, in web 2.0 tagging is used, in web 3.0 the focus on learning user behavior
+ <br/>
+ <br/>
+ web 0.1 focus on companies, web 2.0 focus on community and web 3.0 focus on individualuty
+ <br/>
+ <br/>
+</p>
+
+ <h2 align="center" style = "font-family:courier,arial,helvetica;">2. Medicines side effects Use Case</h2>
+ <p align="center" >
+  if we will search "medical side effects" we will find:
+  <br/>
+  <br/>
+  on web 1.0: only the websites that includes exactly the phrase "medical side effects"
+  <br/>
+  <br/>
+  on web 2.0: we will find all the websites that have any of the words in the phrase "medical side effects" in the title or the description that given in the tags of html
+  <br/>
+  <br/>
+  on web 3.0: we will probably find Israeli's websites that people who similar to me also entered, or websites that are similar to other websites that i usually use.
+ </p>
+</section>
+<hr>
+
+<section id="contact" class="section">
+ <h1 align="center">CONTACT ME :)</h1>
+ <div class="container1">
+  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+
+   <label for="fname">First Name</label>
+   <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+   <label for="lname">Last Name</label>
+   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   <label for="country">Country</label>
+   <select id="country" name="country">
+    <option value="Israel">Israel</option>
+    <option value="other">Other</option>
+   </select>
+
+   <label for="subject">Subject</label>
+   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+   <select id="emoji" name="emoji">
+    <option>&#128516</option>
+    <option>&#128512</option>
+    <option>&#128513</option>
+    <option>&#128514</option>
+    <option>&#128521</option>
+    <option>&#128515</option>
+    <option>&#128531</option>
+    <option>&#128533</option>
+    <option>&#128539</option>
+    <option>&#128561</option>
+
+   </select>
+   <input type="submit" value="send" formaction="mailto:irisdrei@post.bgu.ac.il">
+
+  </form>
+ </div>
+
+</section>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<!--<script type="text/javascript">-->
+<!-- $(document).scroll(function() {-->
+<!--    $('#menu').toggle($(this).scrollTop()>1000)-->
+<!-- });​-->
+<!-- </script>-->
+</body>
+</html>
